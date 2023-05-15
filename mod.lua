@@ -79,10 +79,10 @@ elseif RequiredScript == "lib/units/enemies/cop/copdamage" then
 					return orig(self, ...)
 				end
 
-				local _head_body_name = self._head_body_name
-				self._head_body_name = nil
+				local _head_gear = self._head_gear
+				self._head_gear = nil
 				local result = orig(self, ...)
-				self._head_body_name = _head_body_name
+				self._head_gear = _head_gear
 
 				return result
 			end
@@ -95,10 +95,10 @@ elseif RequiredScript == "lib/units/enemies/cop/copdamage" then
 					return orig(self, ...)
 				end
 
-				local _head_body_name = self._head_body_name
-				self._head_body_name = nil
+				local _head_gear = self._head_gear
+				self._head_gear = nil
 				local result = orig(self, ...)
-				self._head_body_name = _head_body_name
+				self._head_gear = _head_gear
 
 				return result
 			end
